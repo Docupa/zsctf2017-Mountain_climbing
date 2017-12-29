@@ -39,7 +39,7 @@ void then(char *step)
     {
         if(i%2)
             step[i] ^= 4;
-	}
+    }
     enddecrypt://----------------------------------
     __asm inc eax
     __asm dec eax
@@ -62,7 +62,7 @@ int main()
     printf("input your key with your operation can get the maximum:");
     scanf("%s", step);
     if (strlen(step) != 19)
-	{
+    {
         printf("error\n");
         system("pause");
         return 0;
