@@ -36,11 +36,11 @@ void then(char *step)
 	__asm inc eax
 	__asm dec eax
 	begindecrypt:
-		for (int i = 0;i < 19;++i)
-		{
-			if(i%2)
-				step[i] ^= 4;
-		}
+	for (int i = 0;i < 19;++i)
+	{
+		if(i%2)
+			step[i] ^= 4;
+	}
 	enddecrypt:
 	__asm inc eax
 	__asm dec eax
