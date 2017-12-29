@@ -35,13 +35,13 @@ void then(char *step)
 	Decrypt(ptr, Size,4);
 	__asm inc eax
 	__asm dec eax
-	begindecrypt:
+	begindecrypt://--------------------------------
 	for (int i = 0;i < 19;++i)
 	{
 		if(i%2)
 			step[i] ^= 4;
 	}
-	enddecrypt:
+	enddecrypt://----------------------------------
 	__asm inc eax
 	__asm dec eax
 	Decrypt(ptr, Size, 4);
